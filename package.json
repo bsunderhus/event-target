@@ -1,0 +1,41 @@
+{
+  "name": "@bsunderhus/event-target",
+  "version": "1.0.0",
+  "description": "Event Target with event map typings",
+  "author": "Bernardo Sunderhus <bernardo.sunderhus@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": ["EventTarget"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/cjs/index.cjs",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.cjs"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-replace": "^3.0.0",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.60.1",
+    "typescript": "^4.5.4"
+  }
+}
