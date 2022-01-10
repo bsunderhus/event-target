@@ -1,11 +1,13 @@
 {
   "name": "@bsunderhus/event-target",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Event Target with event map typings",
   "author": "Bernardo Sunderhus <bernardo.sunderhus@gmail.com>",
   "license": "MIT",
   "private": false,
-  "keywords": ["EventTarget"],
+  "keywords": [
+    "EventTarget"
+  ],
   "publishConfig": {
     "access": "public"
   },
